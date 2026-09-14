@@ -33,13 +33,13 @@ The current build includes complete practice tests, a Listen & Repeat section, a
 ### Home and format overview
 
 <p align="center">
-  <img src="docs/screenshots/home.jpg" width="240" alt="TOEFL Speaking Practice home screen" />
+  <img src="Home%20and%20format%20overview.jpg" width="240" alt="TOEFL Speaking Practice home screen" />
 </p>
 
 ### Test and Practice modes
 
 <p align="center">
-  <img src="docs/screenshots/modes.jpg" width="240" alt="Test and Practice mode selection" />
+  <img src="Test%20and%20Practice%20modes.jpg" width="240" alt="Test and Practice mode selection" />
 </p>
 
 ## App flow
