@@ -1,14 +1,24 @@
 # TOEFL Speaking Practice — Android
 
-An Android speaking-practice application designed around the updated TOEFL-style speaking workflow, with timed tasks, test and practice modes, local score history, and on-device AI-assisted analysis.
+A portfolio showcase for an Android speaking-practice application designed around the updated TOEFL-style speaking workflow, with timed tasks, Test and Practice modes, local score history, and on-device AI-assisted analysis.
 
-> This is an independent practice project. It is not produced, endorsed, or audited by ETS.
+> **Independent project:** this application is not produced, endorsed, sponsored, or audited by ETS.
+
+## For reviewers
+
+This repository is the public-facing project portfolio for **Shima Atabaki**. It is intended for faculty, admissions reviewers, recruiters, and collaborators who want to quickly understand the product, its scope, and the development work behind it.
+
+**What this project demonstrates:** product ideation, requirement definition, UX/workflow design, edge-case testing, scoring-logic validation, quality assurance, and AI-assisted software development for a working Android application.
+
+**Current release line:** `v2.6.3`
+
+**Production source:** intentionally maintained in a separate **private repository**. This public repository does not expose the production codebase, signing material, local configuration, or credentials.
 
 ## Project overview
 
-This project was conceived as a practical speaking-training tool rather than a static study app. The focus is on reproducing the flow and pressure of a timed speaking session while still giving the learner a separate practice environment for repetition, feedback, and progress tracking.
+The application was conceived as a practical speaking-training tool rather than a static question bank. The focus is on reproducing the flow and time pressure of a speaking session while still giving the learner a separate Practice environment for repetition, feedback, and progress tracking.
 
-The application currently includes a bank of complete practice tests, a Listen & Repeat section, a Take an Interview section, timed recording, local result storage, score breakdowns, CEFR-oriented feedback, and offline transcription/analysis using an on-device Whisper workflow.
+The current build includes complete practice tests, a Listen & Repeat section, a Take an Interview section, timed recording, local result storage, score breakdowns, CEFR-oriented feedback, and offline transcription/analysis using an on-device Whisper workflow.
 
 ## Screenshots
 
@@ -48,7 +58,7 @@ Interview-style prompts are presented in sequence with immediate timed responses
   <img src="offline-ai-analysis.jpg" width="240" alt="Offline AI analysis using on-device Whisper" />
 </p>
 
-Saved WAV responses are transcribed locally using an on-device Whisper workflow before the app generates a practice estimate.
+Saved WAV responses are transcribed locally using an on-device Whisper workflow before the app generates a non-official practice estimate.
 
 ### Results and task breakdown
 
@@ -56,7 +66,7 @@ Saved WAV responses are transcribed locally using an on-device Whisper workflow 
   <img src="results.jpg" width="240" alt="Estimated speaking result and task breakdown" />
 </p>
 
-The result view shows an estimated speaking band, CEFR-oriented reference, legacy-scale reference, and item-level task breakdown.
+The result view presents an estimated speaking band, CEFR-oriented reference, legacy-scale reference, and task-level breakdown.
 
 ### Score history
 
@@ -68,7 +78,7 @@ Recent Test and Practice results are stored locally so the learner can review pr
 
 ## Key features
 
-- Separate **full test simulation** and **practice mode**
+- Separate **full test simulation** and **Practice mode**
 - **Listen & Repeat** task flow with timed responses
 - **Take an Interview** task flow with real-time speaking prompts
 - Automatic recording of spoken responses
@@ -83,26 +93,32 @@ Recent Test and Practice results are stored locally so the learner can review pr
 
 ## Why the project is different
 
-The app is designed around an actual interaction loop:
+The app is designed around a complete interaction loop:
 
-1. The learner selects a complete test or practice session.
+1. The learner selects a full test or practice session.
 2. The application presents timed speaking tasks.
 3. The learner records real responses under time pressure.
 4. Saved audio is transcribed locally.
-5. A rubric-oriented scoring workflow generates an estimated practice result.
+5. A rubric-oriented scoring workflow generates a non-official practice estimate.
 6. Results are stored locally so progress can be reviewed later.
 
-This makes the project closer to a functional assessment simulator than a simple question bank.
+This makes the project closer to a functional speaking-assessment simulator than a simple question bank.
 
 ## Offline AI workflow
 
-A central design decision was to keep the speech-analysis workflow local where possible. The application records the learner's real audio, transcribes saved responses using an on-device Whisper workflow, and combines transcript-related information with timing, pause, and audio-delivery signals to generate a non-official practice estimate.
+A central design decision was to keep speech analysis local where practical. The application records the learner's real audio, transcribes saved responses using an on-device Whisper workflow, and combines transcript-related information with timing, pause, and audio-delivery signals to generate a non-official practice estimate.
 
 The scoring system does **not** reproduce ETS's proprietary scoring system and should not be interpreted as an official TOEFL score predictor.
 
+## Release integrity
+
+The current signed Android release build is prepared as **v2.6.3**. A SHA-256 checksum is maintained in [`CHECKSUMS.txt`](CHECKSUMS.txt) so an installable build can be verified after download.
+
+Release builds are distributed separately from the source repository. Production signing keys and passwords are never stored in this public repository.
+
 ## Development approach
 
-The product concept, feature requirements, user-flow decisions, testing priorities, scoring logic checks, and iterative refinements were directed by **Shima Atabaki**.
+The product concept, feature requirements, user-flow decisions, testing priorities, scoring-logic checks, and iterative refinements were directed by **Shima Atabaki**.
 
 AI-assisted development tools were used during implementation, debugging, testing, and refinement. The project therefore represents a combination of:
 
@@ -124,17 +140,17 @@ AI-assisted development tools were used during implementation, debugging, testin
 - Local result/history storage
 - AI-assisted development and debugging workflow
 
-## Source code
+## Source and security model
 
-The production source code is intentionally kept private.
+The **production source code is intentionally private**. This public repository is maintained as a portfolio and product showcase rather than as a source-code distribution repository.
 
-This public repository is used as a **portfolio and project showcase** rather than as a source-code distribution repository.
+The private source repository excludes local machine configuration, build outputs, signing keystores, signing credentials, API keys, access tokens, and other secrets. The signing keystore used for release builds is stored separately from both repositories.
 
 ## Project status
 
 Active development and refinement.
 
-Current work focuses on usability, scoring consistency, task-flow accuracy, stability, and preparing the application for broader distribution.
+Current work focuses on usability, scoring consistency, task-flow accuracy, stability, and preparation for broader distribution.
 
 ## Author
 
