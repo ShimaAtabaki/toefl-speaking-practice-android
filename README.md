@@ -24,6 +24,48 @@ The application currently includes a bank of complete practice tests, a Listen &
   <img src="docs/screenshots/modes.jpg" width="240" alt="Test and Practice mode selection" />
 </p>
 
+## App flow
+
+### Listen & Repeat
+
+<p align="center">
+  <img src="listen-repeat.jpg" width="240" alt="Listen and Repeat timed speaking task" />
+</p>
+
+The learner hears a prompt, waits for the timed response window, and records a real spoken answer under test-style timing.
+
+### Take an Interview
+
+<p align="center">
+  <img src="interview.jpg" width="240" alt="Take an Interview speaking task" />
+</p>
+
+Interview-style prompts are presented in sequence with immediate timed responses and no preparation interval for the shown item.
+
+### Offline AI analysis
+
+<p align="center">
+  <img src="offline-ai-analysis.jpg" width="240" alt="Offline AI analysis using on-device Whisper" />
+</p>
+
+Saved WAV responses are transcribed locally using an on-device Whisper workflow before the app generates a practice estimate.
+
+### Results and task breakdown
+
+<p align="center">
+  <img src="results.jpg" width="240" alt="Estimated speaking result and task breakdown" />
+</p>
+
+The result view shows an estimated speaking band, CEFR-oriented reference, legacy-scale reference, and item-level task breakdown.
+
+### Score history
+
+<p align="center">
+  <img src="score-history.jpg" width="240" alt="Local score history for recent attempts" />
+</p>
+
+Recent Test and Practice results are stored locally so the learner can review previous attempts and track progress over time.
+
 ## Key features
 
 - Separate **full test simulation** and **practice mode**
