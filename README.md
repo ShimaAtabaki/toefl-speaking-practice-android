@@ -4,6 +4,14 @@ A portfolio showcase for an Android speaking-practice application designed aroun
 
 > **Independent project:** this application is not produced, endorsed, sponsored, or audited by ETS.
 
+<p align="center">
+  <a href="https://github.com/ShimaAtabaki/toefl-speaking-practice-android/releases/download/v2.6.3/TOEFL-Speaking-Practice-v2.6.3.apk">
+    <img src="https://img.shields.io/badge/Download_APK-v2.6.3-brightgreen?style=for-the-badge&logo=android" alt="Download signed Android APK v2.6.3" />
+  </a>
+</p>
+
+<p align="center"><strong>Signed Android release · v2.6.3 · direct APK download</strong></p>
+
 ## For reviewers
 
 This repository is the public-facing project portfolio for **Shima Atabaki**. It is intended for faculty, admissions reviewers, recruiters, and collaborators who want to quickly understand the product, its scope, and the development work behind it.
